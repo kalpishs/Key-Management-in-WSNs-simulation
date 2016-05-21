@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Key-management-in-wsns-simulation- by kalpishs</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/kalpishs/Key-Management-in-WSNs-simulation-">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Key-management-in-wsns-simulation-</h1>
+            <h2>Simulation of the key management protocol in WSNs</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/kalpishs/Key-Management-in-WSNs-simulation-/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/kalpishs/Key-Management-in-WSNs-simulation-/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <pre><code>             ***************** WNS simulation *****************
+
+                       NAME - Kalpish Singhal   
+</code></pre>
+
+<hr>
+
+<h1>
+<a id="task-1" class="anchor" href="#task-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task-1</h1>
+
+<p>-&gt;No. of sensor nodes(n) are taken as an input from the user</p>
+
+<p>-&gt;n unique sample points are generated in the range of(500 X 500).</p>
+
+<p>-&gt; ploting is done for the points using Gnuplot</p>
+
+<h1>
+<a id="task-2" class="anchor" href="#task-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task-2</h1>
+
+<p>-&gt; Simulated Average Network Connectivity : Sigma(Key neighbors for all nodes) / Sigma(Physical Neighbours for all nodes). This gives the network connectivity for the direct key establishment phase.</p>
+
+<h1>
+<a id="task--3" class="anchor" href="#task--3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task -3</h1>
+
+<p>-&gt; Simulated Average Network Connectivity for one hop : Sigma(Key neighbors for all nodes + one_hop_key_count) / 
+Sigma(Physical Neighbours for all nodes). This gives the network connectivity for the path key establishment phase using one hop.</p>
+
+<p>-&gt; Simulated Average Network Connectivity for two hop : Sigma(Key neighbors for all nodes + one_hop_key_count + two_hop_key_count)/Sigma(Physical Neighbours for all nodes). This gives the network connectivity for the path key establishment phase using two hop.</p>
+
+<h1></h1>
+
+<pre><code>                    Running the code
+</code></pre>
+
+<h1></h1>
+
+<p>-&gt;compile using -lm to use math library.</p>
+
+<pre><code>        i.e, 
+
+            $ gcc WNS_simulation.c -lm
+</code></pre>
+
+<p>-&gt;Runing need to pass 3 command line arguments    
+            i.e, </p>
+
+<pre><code>            $./a.out sensor3.data 100 40000
+</code></pre>
+
+<h1></h1>
+
+<pre><code>                           Output
+</code></pre>
+
+<h1></h1>
+
+<p>Enter the no of sensor nodes</p>
+
+<p>10000</p>
+
+<p>Scaling communication range...</p>
+
+<p>Average distance = 261.167575</p>
+
+<p>Communication range of sensor nodes = 25.00</p>
+
+<p>Computing physical neighbors...</p>
+
+<p>Average neighborhood size = 75.194801</p>
+
+<p>EG scheme</p>
+
+<p>Distributing keys...</p>
+
+<p>Network Connectivities : </p>
+
+<p>Simulated Average Network Connectivity</p>
+
+<p>0.221582</p>
+
+<p>Theoritical Network Connectivity</p>
+
+<p>0.221685</p>
+
+<p>Simulated Average Network Connectivity for one hop</p>
+
+<p>0.903190</p>
+
+<p>Theoritical Average Network Connectivity for one hop</p>
+
+<p>0.982401</p>
+
+<p>Simulated Average Network Connectivity for two hop</p>
+
+<p>0.999830</p>
+
+<p>Theoritical Average Network Connectivity for two hop</p>
+
+<p>1.000000</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/kalpishs">kalpishs</a> can be found on <a href="https://github.com/kalpishs/Key-Management-in-WSNs-simulation-">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
